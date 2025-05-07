@@ -27,7 +27,7 @@ export default () => {
         <h1>
             Dictionary App
         </h1>
-    <input onChange={(e) =>setText(e.target.value) }/>
+    <input type="text" onChange={(e) =>setText(e.target.value) }/>
     <button onClick={find}>Search</button>
     <h3>Definition:</h3> <p>{defination}</p>
     </div>
