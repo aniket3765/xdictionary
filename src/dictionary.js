@@ -2,7 +2,7 @@ import { useState } from "react"
 
 export default () => {
     const [definition, SetDefination] = useState();
-    const [text, setText] = useState()
+    const [text, setText] = useState('')
     const dictionary =
         [
 
@@ -15,7 +15,10 @@ export default () => {
         ]
 
     const find = () => {
-
+        if(text.trim() == '') {
+            SetDefination('Word not found in the dictionary.')
+            return
+        }
     let result = dictionary.find(i => (text).toLowerCase() == (i.word).toLowerCase())
 
     if(result) SetDefination(result.meaning)
