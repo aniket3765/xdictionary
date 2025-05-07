@@ -29,6 +29,6 @@ export default () => {
         </h1>
     <input type="text" onChange={(e) =>setText(e.target.value) }/>
     <button onClick={find}>Search</button>
-        <h3>Definition:</h3><p>{definition}</p>
+        <h3>Definition:</h3> <p>{definition}</p>
     </div>
 }
