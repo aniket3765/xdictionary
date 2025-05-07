@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 export default () => {
-    const [defination, SetDefination] = useState();
+    const [definition, SetDefination] = useState();
     const [text, setText] = useState()
     const dictionary =
         [
@@ -29,6 +29,6 @@ export default () => {
         </h1>
     <input type="text" onChange={(e) =>setText(e.target.value) }/>
     <button onClick={find}>Search</button>
-    <h3>Definition:</h3><p>{defination}</p>
+        <h3>Definition:</h3><p>{definition}</p>
     </div>
 }
